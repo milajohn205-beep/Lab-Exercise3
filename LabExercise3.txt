@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main() {
+ 
+    char fullname[20];
+    char section[20];
+    int num1, num2;
+    int sum, difference, product, quotient;
+    
+
+    printf("Enter your name:\n");
+    fgets(fullname, sizeof(fullname), stdin);
+    
+    printf("Enter Section: ");
+    fgets(section, sizeof(section), stdin);
+    
+    printf("\nEnter first number:  ");
+    scanf("%d", &num1);
+
+    printf("\nEnter second number: ");
+    scanf("%d", &num2);
+    
+    printf("\nStudent Calculator\n");
+    printf("Student name: %s", fullname );
+    printf("Student section: %s", section);
+    printf("result:\n");
+
+//decision
+sum = num1 + num2;
+difference = num1 - num2;
+product = num1 * num2;
+quotient = num1 / num2;
+
+     printf("%d + %d = %d\n", num1, num2, sum);
+     printf("%d - %d = %d\n", num1, num2, difference);
+     printf("%d * %d = %d\n", num1, num2, product);
+     printf("%d / %d = %d\n", num1, num2, quotient);
+
+     return 0;
+
+}

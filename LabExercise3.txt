@@ -7,7 +7,7 @@ int main() {
     int sum, difference, product, quotient;
     
 
-    printf("Enter your name:\n");
+    printf("Enter your name:");
     fgets(fullname, sizeof(fullname), stdin);
     
     printf("Enter Section: ");
@@ -36,5 +36,6 @@ quotient = num1 / num2;
      printf("%d / %d = %d\n", num1, num2, quotient);
 
      return 0;
+
 
 }
